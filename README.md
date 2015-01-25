@@ -2,10 +2,10 @@
 
 Simply call the script using the following:
 
-<code>
-$versions = new JoomlaVersions;
-JoomlaVersions->getJoomlaVersion('http://joomla.org');
-</code>
+```
+$version = new JoomlaVersions();
+echo $version->getJoomlaVersion('http://joomla.org');
+```
 
 Of course changing the URL to whatever you wish
 
