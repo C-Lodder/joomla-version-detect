@@ -3,7 +3,7 @@
 Simply call the script using the following:
 
 ```
-$version = new JoomlaVersions();
+$version = new JoomlaVersions;
 echo $version->getJoomlaVersion('http://joomla.org');
 ```
 
