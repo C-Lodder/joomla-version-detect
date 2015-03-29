@@ -55,7 +55,7 @@ class JoomlaVersions
                         $joomla = '3.3.1 - 3.3.6';
                         break;
                     case '4.1.7':
-                        $joomla = '3.4.0';
+                        $joomla = '3.4.0 - 3.4.1';
                         break;  
                     default:
                         $joomla = '3.x';
