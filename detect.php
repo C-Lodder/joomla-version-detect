@@ -9,29 +9,29 @@ class JoomlaVersions
         {
             $site = 'http://'.$site;
         }
-    
+
         // Get the number value from the <version> tag in the XML file
         $dom = new DOMDocument;
         $url = $site . '/administrator/manifests/files/joomla.xml';
         libxml_use_internal_errors(true);
 
         $exists = $this->XMLexists($url);
-    
-        if( $exists )
+
+        if ($exists)
         {
             $dom->load($url);
             $versions = $dom->getElementsByTagName('version');
-    
-            foreach ($versions as $version) 
+
+            foreach ($versions as $version)
             {
                 return $version->nodeValue;
             }
         }
-        else 
+        else
         {
             $mce = $this->getTinyMCEversion($site);
-    
-            if($mce)
+
+            if ($mce)
             {
                 // Base Joomla version on the TinyMCE version
                 switch ($mce)
@@ -56,34 +56,34 @@ class JoomlaVersions
                         break;
                     case '4.1.7':
                         $joomla = '3.4.0 - 3.4.1';
-                        break;  
+                        break;
                     default:
                         $joomla = '3.x';
                 }
-    
+
                 return $joomla;
             }
-            else 
+            else
             {
                 return 'Unknown';
             }
-        }   
+        }
     }
 
     // Get TinyMCE Version 
     private function getTinyMCEversion($site)
     {
-        $tinymce = $site . '/plugins/editors/tinymce/tinymce.xml';      
+        $tinymce = $site . '/plugins/editors/tinymce/tinymce.xml';
         libxml_use_internal_errors(true);
 
         $exists = $this->XMLexists($tinymce);
 
-        if( $exists )
+        if ($exists)
         {
             $dom->load($tinymce);
             $vTag = $dom->getElementsByTagName('version');
 
-            foreach ($vTag as $tag) 
+            foreach ($vTag as $tag)
             {
                 return $tag->nodeValue;
             }
