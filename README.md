@@ -9,7 +9,7 @@ echo $version->get('http://joomla.org');
 
 Of course changing the URL to whatever you wish
 
-===================
+-------------------------------
 
 ## This is released under the [DBAD](http://www.dbad-license.org) license
 
