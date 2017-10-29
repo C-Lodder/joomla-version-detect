@@ -3,15 +3,15 @@
 Simply call the script using the following:
 
 ```
-$version = new JoomlaVersions;
-echo $version->getJoomlaVersion('http://joomla.org');
+$version = new JoomlaVersion;
+echo $version->get('http://joomla.org');
 ```
 
 Of course changing the URL to whatever you wish
 
-=========
+===================
 
-##This is released under the [DBAD](http://www.dbad-license.org) license
+## This is released under the [DBAD](http://www.dbad-license.org) license
 
 ## DON'T BE A DICK PUBLIC LICENSE
 
@@ -40,4 +40,3 @@ Of course changing the URL to whatever you wish
  
  3. Code is provided with no warranty. Using somebody else's code and bitching when it goes wrong makes 
  you a DONKEY dick. Fix the problem yourself. A non-dick would submit the fix back.
-
