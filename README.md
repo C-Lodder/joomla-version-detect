@@ -15,9 +15,9 @@ Of course changing the URL to whatever you wish
 
 ## DON'T BE A DICK PUBLIC LICENSE
 
-> Version 1, December 2009
+> Version 1, 24th January 2015
 
-> Copyright (C) 2009 Philip Sturgeon <email@philsturgeon.co.uk>
+> Copyright (C) 2017 Charlie Lodder
  
  Everyone is permitted to copy and distribute verbatim or modified
  copies of this license document, and changing it is allowed as long
